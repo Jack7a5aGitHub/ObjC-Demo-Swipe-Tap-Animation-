@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-Vd-umB">
+                                <rect key="frame" x="0.0" y="169" width="375" height="230"/>
+                                <connections>
+                                    <segue destination="Dlt-mh-5mD" kind="embed" id="Qen-bR-gua"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nce-Vd-umB" secondAttribute="bottom" constant="268" id="AvD-on-3Ba"/>
+                            <constraint firstItem="Nce-Vd-umB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BMS-5Y-Qg6"/>
+                            <constraint firstItem="Nce-Vd-umB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="boX-Ss-TQc"/>
+                            <constraint firstItem="Nce-Vd-umB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149" id="sDd-BW-FNC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayView" destination="Nce-Vd-umB" id="nsQ-NT-MoC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="115.59220389805098"/>
+        </scene>
+        <!--Child View Controller-->
+        <scene sceneID="20H-o7-8OU">
+            <objects>
+                <viewController storyboardIdentifier="child" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dlt-mh-5mD" customClass="childViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qpr-yy-eGl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dko-Zj-uiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="578"/>
+        </scene>
+    </scenes>
+</document>
